@@ -37,3 +37,25 @@
 - 용량이 큰 쓰기 요청에는 처리하느라 응답이 늦어질수 있다. 
   - 폴링 : 요청에 대한 처리가 완료됬는지 질의
   - CallBack event : 끝날때 알려주는 형식 
+  
+## 분산환경에서 메시지 큐 활용
+
+레디덴큐??? 서버 
+
+## 12-factor
+    서버관리 대응을 위한 12가지 원칙 (클라우드 네이티브) : 12factor.net
+
+### API Gateway
+    요청이 왔을때 하나의 단일 진입점을 제공, 세부 엔드포인트를 몰라도 클라이언트들은 api 게이트웨이만 알아도 접근 가능 
+    - Zuul
+    - Zuul2
+    - Spring Colud Gateway
+
+### Service registry
+    12 factor, Eureka,zookeeper 등 
+    네이티브 클라우드 : 외적인 자원에 영향을 받지 않고 동적으로 서비스를 제공한다.
+### Discovery pattern
+    서비스의 요청이 오면 요청을 연결해줌.
+### Config Server
+    서버 설정을 한곳에 모아서 처리할 수 있음.
+### Distributed Tracing

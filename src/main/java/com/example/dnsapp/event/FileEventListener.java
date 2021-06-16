@@ -11,5 +11,7 @@ public class FileEventListener {
     public  void onFileEventHandler(FileEventService fileEvent)
     {
         log.info("fileEvent recive type :{} data: {}",fileEvent.getType(),fileEvent.getData());
+
+        // 사용자에게 파일 업로드 완료 메시지를 전송하는 등 추가 작업
     }
 }
